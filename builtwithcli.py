@@ -40,8 +40,8 @@ def is_domain_active(domain):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', '--domain', required=True, help="Domaine à rechercher")
-    parser.add_argument('-c', '--cookie', required=True, help="Cookie ou chemin vers le fichier contenant le cookie")
+    parser.add_argument('-d', '--domain', required=True, help="Domain to search")
+    parser.add_argument('-c', '--cookie', required=True, help="Cookie or path to cookie file")
     args = parser.parse_args()
 
     html = fetch_data(args.domain, args.cookie)
